@@ -10,8 +10,6 @@
       text-align: center;
       padding: 50px;
       direction: rtl;
-      position: relative;
-      min-height: 100vh;
     }
 
     img {
@@ -47,15 +45,6 @@
     button {
       margin-right: 10px;
     }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      color: #666;
-      font-size: 14px;
-    }
   </style>
 </head>
 <body>
@@ -74,10 +63,6 @@
   <button onclick="toggleAudio()">تشغيل / إيقاف الموسيقى</button>
   <a href="#" target="_blank">تواصل مع مليكة</a>
 
-  <footer>
-    برمجة وتصميم عبد التواب الحاشدي
-  </footer>
-
   <script>
     function toggleAudio() {
       var audio = document.getElementById("background-audio");
@@ -88,6 +73,9 @@
       }
     }
   </script>
+<p style="text-align: center; font-size: 24px; color: red; margin-top: 50px;">
+  برمجة وتصميم عبد التواب الحاشدي
+</p>
 
 </body>
 </html>
