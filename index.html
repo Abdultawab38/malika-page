@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إهداء إلى مليكة البكري</title>
+  <style>
+    body {
+      background-color: #f3f0e7;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      direction: rtl;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #8e44ad;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+      margin: 20px;
+    }
+
+    a, button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8e44ad;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button {
+      margin-right: 10px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="background-audio" autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_73025cf3dc.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <img src="https://i.postimg.cc/CMXm5jct/IMG-20250422-064952-151.jpg" alt="مليكة البكري">
+  <h1>إلى مليكة البكري</h1>
+  <p>من المغرب الحبيبة إلى إسبانيا الجميلة، أنتي زهرة تعبق بروح النور.</p>
+  <p>شكرًا لحضوركِ الرقيق، لنقاء نيتك، ولعلاقتك العميقة بذاتك وروحك.</p>
+  <p>هذه الصفحة إهداء بسيط من القلب لمن نراها مصدر إلهام ولطف وصدق.</p>
+
+  <button onclick="toggleAudio()">تشغيل / إيقاف الموسيقى</button>
+  <a href="#" target="_blank">تواصل مع مليكة</a>
+
+  <footer>
+    برمجة وتصميم عبد التواب الحاشدي
+  </footer>
+
+  <script>
+    function toggleAudio() {
+      var audio = document.getElementById("background-audio");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+
+</body>
+</html>
